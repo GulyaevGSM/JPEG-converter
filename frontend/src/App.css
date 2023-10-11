@@ -1,0 +1,137 @@
+/* App.css */
+
+body {
+  background-color: #222;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  /* Включаем использование флексбоксов */
+  justify-content: center;
+  /* Горизонтальное выравнивание по центру */
+  align-items: center;
+  /* Вертикальное выравнивание по центру */
+  min-height: 100vh;
+  /* Чтобы приложение занимало всю высоту экрана */
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Добавляем немного прозрачности для фона приложения */
+  border-radius: 10px;
+  /* Закругляем углы блока приложения */
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+input[type="file"] {
+  margin: 10px 0;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+label {
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+/* App.css */
+
+/* Скрываем стандартную стрелку выпадающего списка */
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+/* Добавляем стили для кастомной стрелки */
+select::after {
+  content: '▼';
+  /* Символ стрелки вниз */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  /* Делаем стрелку некликабельной */
+}
+
+/* Стили для опций в выпадающем списке */
+select option {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Стили при наведении на опции */
+select option:hover {
+  background-color: #444;
+}
+
+
+button {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.download {
+  display: flex;
+  align-items: center;
+}
+
+.coverted__images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #0056b3;
+}
+
+p {
+  font-weight: bold;
+  font-size: 19px;
+  letter-spacing: 1.2px;
+}
